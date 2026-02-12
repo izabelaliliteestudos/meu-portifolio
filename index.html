@@ -3,28 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Izabela | Author & Creative</title>
+    <title>Izabela | Author & President</title>
     <style>
         :root {
-            --bg: #0a0a0a;
-            --accent: #630d0d;
-            --text-main: #d1d1d1;
-            --text-dim: #888;
+            --bg: #1a1616; /* Um "quase preto" quente, cor de madeira escura */
+            --accent: #800000; /* Vinho vitoriano */
+            --gold: #c5a059; /* Toque de ouro para elegância */
+            --text-main: #e8e2d6; /* Papel envelhecido */
         }
-        body { font-family: 'Playfair Display', serif; background: var(--bg); color: var(--text-main); margin: 0; scroll-behavior: smooth; }
-        header { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(to bottom, rgba(10,10,10,0.5), var(--bg)), url('https://images.unsplash.com/photo-1461344577544-4e5dc9487184?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
-        h1 { font-size: 3.5rem; letter-spacing: 8px; text-transform: uppercase; margin-bottom: 10px; font-weight: 400; color: #fff; }
-        .sub-header { font-style: italic; letter-spacing: 2px; color: var(--text-dim); font-size: 1rem; }
-        section { max-width: 900px; margin: 100px auto; padding: 0 20px; }
-        h2 { font-size: 0.8rem; letter-spacing: 5px; text-transform: uppercase; color: var(--accent); margin-bottom: 40px; border-bottom: 1px solid #222; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-        .card { padding: 30px; border: 1px solid #1a1a1a; transition: all 0.5s ease; position: relative; overflow: hidden; }
-        .card:hover { border-color: var(--accent); background: #111; transform: translateY(-10px); }
-        .card h3 { font-size: 1.4rem; margin-top: 0; color: #fff; font-weight: normal; }
-        .card p { font-size: 0.9rem; color: var(--text-dim); line-height: 1.8; }
-        .btn { display: inline-block; margin-top: 20px; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: #fff; text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 5px; transition: 0.3s; }
-        .btn:hover { color: var(--accent); border-color: #fff; }
-        footer { padding: 100px 20px; text-align: center; font-size: 0.7rem; letter-spacing: 3px; color: #333; text-transform: uppercase; }
+        body { 
+            font-family: 'Playfair Display', serif; 
+            background: var(--bg); 
+            background-image: radial-gradient(circle, #251e1e 1px, transparent 1px);
+            background-size: 30px 30px; /* Leve textura de papel de parede */
+            color: var(--text-main); 
+            margin: 0; 
+        }
+        header { 
+            height: 70vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            background: linear-gradient(rgba(26,22,22,0.8), rgba(26,22,22,0.9)), url('https://images.unsplash.com/photo-1542089363-bba089ffaa25?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover;
+            border-bottom: 1px solid var(--gold);
+        }
+        h1 { font-size: 3.5rem; letter-spacing: 12px; margin-bottom: 10px; color: var(--gold); }
+        .sub-header { font-style: italic; color: var(--text-main); opacity: 0.7; letter-spacing: 3px; }
+        section { max-width: 900px; margin: 80px auto; padding: 0 20px; }
+        h2 { font-size: 0.9rem; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); text-align: center; margin-bottom: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { 
+            padding: 40px; 
+            background: rgba(255,255,255,0.03); 
+            border: 1px solid rgba(197,160,89,0.2); 
+            transition: 0.5s;
+            text-align: center;
+        }
+        .card:hover { border-color: var(--gold); background: rgba(197,160,89,0.05); transform: scale(1.02); }
+        .card h3 { font-size: 1.5rem; color: #fff; margin-bottom: 15px; }
+        .btn { 
+            display: inline-block; 
+            margin-top: 25px; 
+            font-size: 0.75rem; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            color: var(--gold); 
+            text-decoration: none; 
+            border: 1px solid var(--gold); 
+            padding: 10px 25px; 
+            transition: 0.4s;
+        }
+        .btn:hover { background: var(--gold); color: var(--bg); }
+        footer { padding: 80px; text-align: center; font-size: 0.7rem; letter-spacing: 4px; color: var(--gold); opacity: 0.5; }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
@@ -32,31 +65,30 @@
 
 <header>
     <h1>IZABELA</h1>
-    <div class="sub-header">Escritora • Artesã • Desenvolvedora</div>
+    <div class="sub-header">Escritora • Presidente Institucional • Desenvolvedora</div>
 </header>
 
 <section>
-    <h2>LITERATURA</h2>
+    <h2>LIDERANÇA & COMUNIDADE</h2>
+    <div class="card" style="max-width: 600px; margin: auto;">
+        <h3>Associação Arteminas Fabri</h3>
+        <p>Presidente Institucional da associação voltada ao fomento do artesanato local em Minas Gerais.</p>
+        <a href="https://www.instagram.com/arte_minas_fabri/" class="btn" target="_blank">Conhecer a Arteminas</a>
+    </div>
+</section>
+
+<section>
+    <h2>LITERATURA (Lílite Aguiar)</h2>
     <div class="grid">
         <div class="card">
-            <h3>A Neve Feita de Cinzas</h3>
-            <p>Uma imersão no horror gótico e mistérios insondáveis.</p>
-            <a href="https://www.amazon.com.br/dp/B0G4XDW9Y3/" class="btn" target="_blank">Adquirir Obra</a>
-        </div>
-        <div class="card">
-            <h3>A Guardiã de Areia</h3>
-            <p>Onde o medo e a clausura se encontram em narrativa densa.</p>
-            <a href="https://www.amazon.com.br/dp/B0GD1ZDS7L" class="btn" target="_blank">Adquirir Obra</a>
-        </div>
-        <div class="card">
-            <h3>Parque dos Ecos</h3>
-            <p>O thriller psicológico em sua forma mais obscura.</p>
-            <a href="https://www.amazon.com.br/dp/B0GDP2D9TC" class="btn" target="_blank">Adquirir Obra</a>
-        </div>
-        <div class="card">
             <h3>O Segundo Homem</h3>
-            <p>A mais recente exploração literária de Lílite Aguiar.</p>
-            <a href="https://www.amazon.com.br/dp/B0GMTB126K" class="btn" target="_blank">Adquirir Obra</a>
+            <p>A mais recente obra publicada. Um mergulho no suspense psicológico.</p>
+            <a href="https://www.amazon.com.br/dp/B0GMTB126K" class="btn" target="_blank">Explorar Livro</a>
+        </div>
+        <div class="card">
+            <h3>Outras Obras</h3>
+            <p>Confira o catálogo completo de horror gótico e thrillers na Amazon.</p>
+            <a href="https://www.amazon.com.br/dp/B0G4XDW9Y3/" class="btn" target="_blank">Ver Catálogo</a>
         </div>
     </div>
 </section>
@@ -66,8 +98,8 @@
     <div class="grid">
         <div class="card">
             <h3>Iza & Gabi Artes</h3>
-            <p>Peças exclusivas que unem tradição manual e design contemporâneo.</p>
-            <a href="https://www.instagram.com/iza_e_gabi_artes/" class="btn" target="_blank">Explorar Coleção</a>
+            <p>Produção autoral de amigurumis e peças exclusivas feitas à mão.</p>
+            <a href="https://www.instagram.com/iza_e_gabi_artes/" class="btn" target="_blank">Acessar Instagram</a>
         </div>
     </div>
 </section>
@@ -75,16 +107,15 @@
 <section>
     <h2>TECNOLOGIA</h2>
     <div class="card">
-        <h3>Graduação em Sistemas</h3>
-        <p>Desenvolvimento de soluções técnicas e arquitetura de software.</p>
-        <a href="https://github.com/izabelaliliteestudos" class="btn" target="_blank">Acessar Repositório</a>
+        <h3>Graduação em ADS</h3>
+        <p>Desenvolvimento de sistemas e soluções em tecnologia.</p>
+        <a href="https://github.com/izabelaliliteestudos" class="btn" target="_blank">Acessar GitHub</a>
     </div>
 </section>
 
 <footer>
-    © 2026 Izabela. Todos os direitos reservados.
+    © 2026 IZABELA. ARS LONGA, VITA BREVIS.
 </footer>
 
 </body>
 </html>
-
