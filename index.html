@@ -8,90 +8,109 @@
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
         :root {
-            --bg: #0a0a0a;
-            --gold: #a68b5e;
-            --glass: rgba(255, 255, 255, 0.03);
-            --border: rgba(166, 139, 94, 0.2);
+            --bg-deep: #0a0808;
+            --wine-velvet: #4a0404;
+            --gold-antique: #a68b5e;
+            --text-paper: #d9d2c5;
         }
 
         body { 
             font-family: 'Playfair Display', serif; 
-            background-color: var(--bg);
-            color: #d9d2c5;
+            background-color: var(--bg-deep);
+            color: var(--text-paper);
             margin: 0;
-            line-height: 1.6;
+            background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
         }
 
-        /* Hero elegante e centralizado */
         header { 
-            height: 80vh; 
+            height: 90vh; 
             display: flex; 
             flex-direction: column; 
             justify-content: center; 
             align-items: center; 
             text-align: center; 
-            background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.95)), 
+            background: linear-gradient(rgba(10,8,8,0.7), rgba(10,8,8,0.9)), 
                         url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2070&auto=format&fit=crop'); 
             background-size: cover;
+            background-position: center;
             background-attachment: fixed;
+            border-bottom: 3px double var(--gold-antique);
         }
 
-        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; letter-spacing: 12px; margin: 0; color: var(--gold); }
-        .sub-header { font-style: italic; letter-spacing: 4px; margin-top: 15px; opacity: 0.6; }
-
-        section { max-width: 1100px; margin: 80px auto; padding: 0 20px; }
-        h2 { font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 6px; text-transform: uppercase; color: var(--gold); text-align: center; margin-bottom: 40px; }
-
-        /* Grade Simétrica */
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 20px; 
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 4rem; 
+            letter-spacing: 18px; 
+            margin: 0; 
+            color: var(--gold-antique);
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
         }
 
-        .card { 
-            background: var(--glass);
-            border: 1px solid var(--border);
-            padding: 30px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 250px; /* Mantém todos os cards com a mesma altura */
-            transition: 0.4s;
-        }
+        .sub-header { font-style: italic; letter-spacing: 6px; margin-top: 20px; opacity: 0.8; color: var(--gold-antique); }
 
-        .card:hover { border-color: var(--gold); background: rgba(166, 139, 94, 0.05); }
+        section { max-width: 1100px; margin: 100px auto; padding: 0 30px; }
         
-        .card h3 { font-family: 'Cinzel', serif; font-size: 1.1rem; color: #fff; margin-bottom: 15px; }
-        .card p { font-size: 0.85rem; color: #999; flex-grow: 1; }
+        h2 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 1.2rem; 
+            letter-spacing: 10px; 
+            text-transform: uppercase; 
+            color: var(--gold-antique); 
+            text-align: center; 
+            margin-bottom: 60px;
+            border-bottom: 1px solid rgba(166, 139, 94, 0.3);
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; }
+
+        /* Card Revitalizado - Fim do Chocho */
+        .card { 
+            background: linear-gradient(145deg, #151010, var(--wine-velvet));
+            border: 2px double var(--gold-antique);
+            padding: 40px;
+            text-align: center;
+            transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card:hover { 
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 0 25px rgba(166, 139, 94, 0.3);
+            background: linear-gradient(145deg, var(--wine-velvet), #5e0505);
+        }
+        
+        .card h3 { font-family: 'Cinzel', serif; font-size: 1.3rem; color: #fff; margin-bottom: 20px; letter-spacing: 2px; }
+        .card p { font-size: 0.9rem; color: #ccc; line-height: 1.8; }
 
         .btn { 
             display: inline-block; 
+            margin-top: 30px;
             font-family: 'Cinzel', serif;
-            font-size: 0.65rem; 
-            letter-spacing: 2px; 
-            color: var(--gold); 
+            font-size: 0.7rem; 
+            letter-spacing: 4px; 
+            color: var(--gold-antique); 
             text-decoration: none; 
-            border: 1px solid var(--gold); 
-            padding: 10px; 
-            margin-top: 20px;
-            transition: 0.3s;
+            border: 1px solid var(--gold-antique); 
+            padding: 12px 25px; 
+            transition: 0.4s;
+            background: rgba(0,0,0,0.3);
         }
 
-        .btn:hover { background: var(--gold); color: var(--bg); }
+        .btn:hover { background: var(--gold-antique); color: var(--bg-deep); }
 
-        footer { padding: 60px; text-align: center; font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 4px; color: var(--gold); opacity: 0.3; }
+        footer { padding: 80px; text-align: center; font-family: 'Cinzel', serif; font-size: 0.8rem; letter-spacing: 8px; color: var(--gold-antique); opacity: 0.4; }
 
-        /* Seção de Texto Centralizada */
-        .essencia-content {
+        .essencia-box {
             text-align: center;
             max-width: 800px;
-            margin: 0 auto;
-            font-style: italic;
-            font-size: 1.1rem;
-            color: #aaa;
-            line-height: 2;
+            margin: 0 auto 120px;
+            padding: 60px;
+            border: 1px solid rgba(166, 139, 94, 0.1);
+            background: rgba(255, 255, 255, 0.01);
+            position: relative;
         }
     </style>
 </head>
@@ -99,12 +118,14 @@
 
 <header>
     <h1>IZABELA</h1>
-    <div class="sub-header">Escritora • Presidente • Desenvolvedora</div>
+    <div class="sub-header">Author • President • Developer</div>
 </header>
 
 <section>
-    <div class="essencia-content">
-        "Entre a densidade do horror gótico e a precisão técnica, busco o que é perene. Uma existência dedicada ao silêncio que precede a criação."
+    <div class="essencia-box">
+        <p style="font-style: italic; font-size: 1.2rem; line-height: 2.2; color: var(--text-paper);">
+            "Entre a densidade do horror gótico e a precisão dos sistemas, busco o que é perene. Uma existência dedicada ao silêncio que precede a criação."
+        </p>
     </div>
 </section>
 
@@ -135,32 +156,32 @@
 </section>
 
 <section>
-    <h2>FUNDAMENTOS</h2>
-    <div class="grid">
-        <div class="card" style="min-height: 180px; border-style: dotted; opacity: 0.8;">
-            <h3>Sistemas & Lógica</h3>
-            <p>Graduação em ADS e análise de processos operacionais.</p>
-            <a href="https://github.com/izabelaliliteestudos" class="btn" target="_blank">Repositório</a>
-        </div>
-        <div class="card" style="min-height: 180px; border-style: dotted; opacity: 0.8;">
-            <h3>Gestão Operacional</h3>
-            <p>Formação técnica em Logística e fluxos de organização [cite: 2025-12-28].</p>
-        </div>
-    </div>
-</section>
-
-<section>
     <h2>INSTITUCIONAL & ARTES</h2>
     <div class="grid">
         <div class="card">
             <h3>Arte Minas Fabri</h3>
             <p>Presidência Institucional.</p>
-            <a href="https://www.instagram.com/arte_minas_fabri/" class="btn" target="_blank">Ver Instituição</a>
+            <a href="https://www.instagram.com/arte_minas_fabri/" class="btn" target="_blank">Acessar</a>
         </div>
         <div class="card">
             <h3>Iza & Gabi Artes</h3>
-            <p>Produção autoral e manual.</p>
+            <p>Curadoria manual exclusiva.</p>
             <a href="https://www.instagram.com/iza_e_gabi_artes/" class="btn" target="_blank">Ver Catálogo</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>DOMÍNIOS</h2>
+    <div class="grid">
+        <div class="card" style="border-style: solid; background: rgba(0,0,0,0.5);">
+            <h3>Sistemas</h3>
+            <p>Análise e Desenvolvimento de Sistemas.</p>
+            <a href="https://github.com/izabelaliliteestudos" class="btn" target="_blank">GitHub</a>
+        </div>
+        <div class="card" style="border-style: solid; background: rgba(0,0,0,0.5);">
+            <h3>Logística</h3>
+            <p>Gestão e fluxos operacionais.</p>
         </div>
     </div>
 </section>
